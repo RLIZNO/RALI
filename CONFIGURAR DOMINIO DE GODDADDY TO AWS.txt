@@ -1,0 +1,62 @@
+https://www.youtube.com/watch?v=8Pcc13m60os
+
+/////// AWS/////////
+
+Route 53
+
+https://console.aws.amazon.com/route53/home?region=us-east-2#hosted-zones:
+
+CREAR HOSTED ZONE
+
+colocar el dominio, comment opcional y type por defecto -> crear
+
+Luego ir a CREATE RECORD SET
+
+Y copiar los value en server name de godaddy
+
+https://dcc.godaddy.com/manage/representacionesrali.com/dns#divDnsManagement
+
+
+/////// GODDADY /////////
+
+Darle clic en cambiar
+
+Deafult
+
+Aañadir valores -> Save
+
+
+/////// AWS/////////
+
+Create Record Set
+
+Name: www
+type IPv4
+Value: IP-Server
+
+clic en Create
+
+Agregar otro para que no lleve wwww
+
+Name: se deja en blanco
+type IPv4
+Alias: yes
+Alias target: www.dominio.ext
+
+clic en Create
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+

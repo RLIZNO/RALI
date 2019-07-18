@@ -1,0 +1,15 @@
+docker container stop + idContenedor // detener el contenedor
+ 
+docker container rm + idContenedor   // eliminar el contenedor
+
+docker ps -a  // listar contenedores
+
+docker exec -it +idContenedor /bin/bash // abrir bash
+
+find -name +nombreArchivo
+
+
+
+
+
+

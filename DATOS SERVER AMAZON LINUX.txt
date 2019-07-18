@@ -1,1 +1,3 @@
 18.191.78.35
+
+usuario: ec2-user
