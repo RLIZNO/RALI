@@ -1,0 +1,22 @@
+#Documentacion para instalar docker
+https://unkkuri.com/blog/unkkuri-blog-1/post/install-odoo-version-11-in-docker-container-21
+
+Server 18.191.78.35 Usuario ec2-user
+
+docker ps -a #Listar repositorios
+
+#Crear network
+
+docker network create --driver bridge rali-odoo-nw
+
+#Crear volume
+docker volume create --name rali-db-data
+
+#Crear contenedor postgress SQL
+docker run -d --name rali-db  --env POSTGRES_USER=odoo --env POSTGRES_PASSWORD=rali-secret-pw --network=rali-odoo-nw --mount source=rali-db-data,target=/var/lib/postgresql/data  library/postgres:10.0
+
+# Crear logs
+docker logs rali-db
+
+
+#Crear volumenes odoo
